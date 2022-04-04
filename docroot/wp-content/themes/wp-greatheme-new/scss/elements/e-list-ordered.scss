@@ -1,0 +1,15 @@
+.e-list-ordered {
+    list-style-position: inside;
+
+    &__link {
+        text-decoration: none;
+        margin-bottom: $s-3;
+        display: block;
+    }
+    
+    &__item {
+        font-family: 'font-medium';
+        font-size: $t-text-lg;
+        color: $t-aulapp-green;
+    }
+}

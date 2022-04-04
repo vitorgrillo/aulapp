@@ -1,0 +1,247 @@
+//Navbar Horizontal - Wordpress 5
+.c-navbar {
+    display: flex;
+    width: 100%;
+
+    // Wordpress menu container styles
+    > div {
+        display: flex;
+        align-items: center;
+    }
+
+    // Wordpress menu styles
+    .menu {
+        list-style: none;
+        display: inline-flex;
+        align-items: center;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+
+    // Wordpress menu item styles
+    .menu-item {
+        a {
+            text-decoration: none;
+        }
+    }
+
+    // Primary navbar 
+    &.--main {
+        font-family: 'font-light';
+
+        > div {
+            width: 100%;
+        }
+
+        .menu {
+            width: 100%;
+            justify-content: space-around;
+        }
+        
+        .menu-item {
+            a {
+                padding: $s-1 $s-1;
+                color: $t-aulapp-green;
+                font-size: $t-text-sm;
+                display: inline-flex;
+                flex-direction: column;
+
+                &:after {
+                    content: '';
+                    width: 40px;
+                    height: 4px;
+                    background-color: transparent; 
+                }
+            }
+        }
+    }
+
+    &.--brand-color  {
+        .menu-item {
+            &.active {
+                a {
+                    &:after {
+                        background-color: $t-brand-color;
+                    }
+                }
+            }
+        }
+    }
+
+    &.--brand-color-three  {
+        .menu-item {
+            &.active {
+                a {
+                    &:after {
+                        background-color: $t-brand-color-three;
+                    }
+                }
+            }
+        }
+    }
+
+    &.--secondary {
+        justify-content: center;
+        padding-top: 30px;
+
+        .menu {
+            justify-content: flex-start;
+        }
+
+        .menu-item {
+            display: inline-flex;
+            justify-content: center;
+
+            a {
+                font-family: 'font-bold';
+                font-size: $t-text-md;
+                padding: 0 $s-4;
+                color: $t-aulapp-green;
+                display: inline-flex;
+                flex-direction: column;
+
+                &:after {
+                    content: '';
+                    width: 40px;
+                    height: 4px;
+                    background-color: transparent; 
+                    margin-left: 1px;
+                }
+
+                &:hover {
+                    color: $t-brand-color-two-dark;
+                }
+
+                &:last-child {
+                    padding-right: 0;
+                }
+            }
+
+            &.active {
+                a {                    
+                    &:after {
+                        background-color: $t-aulapp-green;
+                    }
+                }
+            }
+        }
+    }
+
+    // Simple horizontal navbar
+    &.--footer {
+        justify-content: center;
+
+        div {
+            width: 100%;
+            justify-content: center;
+        }
+        
+        .menu {
+            flex-direction: column;
+        }
+
+        .menu-item {
+            display: flex;
+
+            a {
+                font-family: 'font-bold';
+                font-size: $t-text-md;
+                padding: 0 10px;
+                color: $t-aulapp-green;
+
+                &:hover {
+                    color: $t-brand-color-two-dark;
+                }
+            }
+        }
+    }
+}
+
+
+@include media-breakpoint-up(sm) {
+    .c-navbar {
+        &.--main {
+            font-size: $t-text-md;
+
+            .menu-item {
+                a {
+                    padding: $s-2 $s-4;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .c-navbar {
+        width: initial;
+        
+        &.--main {
+            font-size: $t-text-lg;
+            justify-content: flex-start;
+
+            .menu-item {
+                a { 
+                    &:first-child {
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+
+        &.--secondary {
+            padding-top: 0;
+        }
+
+        &.--footer {
+            .menu-item {
+
+                a {
+                    padding: 0 12px;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .c-navbar {
+        
+        &.--footer {
+            .menu {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+    
+            .menu-item {
+                display: inline-flex;
+            }
+        }
+    }
+}
+
+
+@include media-breakpoint-up(xl) {
+    .c-navbar {
+        &.--footer {
+            .menu-item {
+                a {
+                    padding: 0 15px;
+                }
+            }
+        }
+    }
+}
+
+
+@include media-breakpoint-up(xxl) {
+    .c-navbar {
+        &.--footer {
+            .menu-item {
+                a {
+                    padding: 0 20px;
+                }
+            }
+        }
+    }
+}

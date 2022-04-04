@@ -1,0 +1,30 @@
+.e-list-text-icon {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    list-style-position: inside;
+    padding: 0;
+
+    &__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $t-white;
+        text-decoration: none;
+        margin-right: $s-3;
+        min-width: 72px;
+
+        &:hover {
+            color: $t-aulapp-gray-dark;
+        }
+    }
+
+    &__icon {
+        font-size: $t-text-xxxxl;
+    }
+
+    &__text {
+        font-family: 'font-bold';
+    }
+}

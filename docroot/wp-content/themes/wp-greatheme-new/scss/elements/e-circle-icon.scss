@@ -1,0 +1,24 @@
+.e-circle-icon {
+    width: 83px;
+    height: 83px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: $t-text-xxxl;
+
+    &.--brand-color {
+        color: $t-brand-color;
+        background-color: $t-white;
+    }
+
+    &.--dark {
+        color: $t-text-color-dark;
+        background-color: $t-white;
+    }
+
+    &.--brand-color-three {
+        color: $t-brand-color-three;
+        background-color: $t-white;
+    }
+}

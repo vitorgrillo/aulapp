@@ -1,0 +1,70 @@
+// Path
+$path: '/aulapp/wp-content/themes/wp-greatheme-new/';
+
+// Commom colors
+$t-white: rgb(255, 255, 255);
+$t-black: #000;
+$t-aulapp-rose: #DF4478;
+$t-aulapp-green-light: #00B28C;
+$t-aulapp-green: #294951;
+$t-aulapp-gray-dark: #1D1D1D;
+$t-aulapp-green-light: #00B28C;
+
+// Brand colors
+$t-brand-color: $t-aulapp-rose;
+$t-brand-color-light: lighten($t-brand-color, 20%);
+$t-brand-color-medium: darken($t-brand-color, 15%);
+$t-brand-color-dark: darken($t-brand-color, 22%);
+
+$t-brand-color-two: $t-aulapp-green;
+$t-brand-color-two-light: lighten($t-brand-color-two, 3%);
+$t-brand-color-two-medium: darken($t-brand-color-two, 5%);
+$t-brand-color-two-dark: darken($t-brand-color-two, 22%);
+
+$t-brand-color-three: $t-aulapp-green-light;
+$t-brand-color-three-light: lighten($t-brand-color-three, 3%);
+$t-brand-color-three-medium: darken($t-brand-color-three, 5%);
+$t-brand-color-three-dark: darken($t-brand-color-three, 22%);
+
+// Grays
+$t-gray-super-light: #F2F2F2;
+$t-gray-light: #EAEAEA;
+$t-gray-medium: #d8d8d8;
+$t-gray-dark: #859599;
+
+// Text colors
+$t-text-green-dark: $t-aulapp-green;
+$t-text-color-dark: $t-aulapp-gray-dark;
+$t-text-color-light: $t-white;
+
+// Text sizes
+$t-text-xs:     .625rem;    //10px
+$t-text-sm:     1rem;       //16px
+$t-text-md:     1.125rem;   //18px
+$t-text-lg:     1.25rem;    //20px
+$t-text-xl:     1.75rem;    //28px
+$t-text-xxl:     2rem;      //32px
+$t-text-xxxl:    2.5rem;    //40px
+$t-text-xxxxl:   3rem;      //48px
+ 
+$t-line-xs:      12px;      //10px
+$t-line-sm:      19px;      //16px
+$t-line-md:      22px;      //18px
+$t-line-lg:      24px;      //20px
+$t-line-xl:      25px;      //28px
+$t-line-xxl:     36px;      //32px
+$t-line-xxxl:    45px;      //40px
+$t-line-xxxxl:   53px;      //48px
+
+$s-0: 0;
+$s-1: .25rem;
+$s-2: .5rem;
+$s-3: 1rem;
+$s-4: 1.5rem;
+$s-5: 2rem;
+$s-6: 3rem;
+
+// Shadows
+$t-shadow-bt: 3px 3px 2px #00000029;
+$t-shadow-bt-hover: 3px 3px 2px #00000029;
+

@@ -1,0 +1,134 @@
+.c-banner-cases {
+    display: flex!important;
+    flex-direction: column;
+
+    &__quotes {
+        color: $t-brand-color;
+        font-size: 65px;
+        display: block;
+        
+        &.--right {
+            margin-right: -20px;
+        }
+
+        &.--left {
+            margin-left: -10px;
+            text-align: right;
+            transform: scale(-1);
+        }
+    }
+
+    &__image {
+        width: 100% !important;
+        height: fit-content;
+        margin-bottom: $s-4;
+        display: block;
+    }
+
+    &__text {
+        font-size: $t-text-md;
+        line-height: $t-line-md;
+        font-family: 'font-medium';
+        text-align: center;
+        padding: $s-0 $s-2;
+    }
+
+    &__name {
+        font-family: 'font-bold';
+        display: flex;
+        color: $t-brand-color;
+        flex-direction: column;
+        font-size: $t-text-lg;
+        padding: 0 40px;
+        margin-top: -40px;
+        text-align: center;
+    }
+
+    &__details {
+        font-size: $t-text-md;
+        color: $t-brand-color-two-dark;
+    }
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {
+    .c-banner-cases {
+        align-items: center;
+    
+        &__quotes {
+            
+            &.--right {
+            }
+    
+            &.--left {
+            }
+        }
+    
+        &__image {
+            max-width: 480px;
+        }
+    
+        &__text {
+        }
+    
+        &__name {
+        }
+    
+        &__details {}
+    }
+}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {
+    .c-banner-cases {
+        flex-direction: row;
+        align-items: center;
+    
+        &__quotes {
+            
+            &.--right {
+            }
+    
+            &.--left {
+            }
+        }
+    
+        &__image {
+            max-width: 360px;
+            margin-right: $s-5;
+
+        }
+    
+        &__text {
+            text-align: left;
+            padding: $s-0;
+            margin-left: $s-5;
+        }
+    
+        &__name {
+            text-align: left;
+            padding: $s-0;
+            margin-left: $s-5;
+        }
+    
+        &__details {}
+    }
+}
+
+@include media-breakpoint-up(xxl) {}

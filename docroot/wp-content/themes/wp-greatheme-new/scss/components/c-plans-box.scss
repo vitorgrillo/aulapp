@@ -1,0 +1,48 @@
+// Plans box
+.c-plans-box {
+    padding: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $t-gray-light;
+    font-family: 'font-bold';
+
+    &__title {
+        font-size: $t-text-xxl;
+        color: $t-gray-dark;
+    }
+
+    &__text {
+        font-size: $t-text-xl;
+        margin-bottom: 2.5rem;
+        color: $t-gray-dark;
+    }
+
+    // Highlighted plans
+    &.--highlighted {
+        margin: 0;
+        background-color: $t-brand-color-two-light;
+        color: $t-text-color-light;
+        position: relative;
+
+        .c-plans-box__title {
+            color: $t-white;
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .c-plans-box {
+        margin: 1.5rem 0;
+    }
+
+    // Highlighted plans
+    &.--highlighted {
+        padding-top: 5.5rem;
+        
+        .e-circle-icon {
+            margin-top: -130px;
+        }
+    }
+}

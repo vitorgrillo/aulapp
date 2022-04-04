@@ -1,0 +1,56 @@
+// Backgrounds
+.d-bg-brand-color {
+    background-color: $t-brand-color;
+}
+
+.d-bg-brand-color-two {
+    background-color: $t-brand-color-two;
+}
+
+.d-bg-gray-super-light {
+    background-color: $t-gray-super-light;
+}
+
+.d-bg-gray-light {
+    background-color: $t-gray-light;
+}
+
+.d-bg-gray-medium {
+    background-color: $t-gray-medium;
+}
+
+.d-bg-gray-dark {
+    background-color: $t-gray-dark;
+}
+
+.d-bg-brand-color-three {
+    background-color: $t-brand-color-three;
+}
+
+.--d-bg-dual-vertical {
+    background: repeating-linear-gradient(
+        to right,
+        $t-gray-medium,
+        $t-gray-medium 50%,
+        $t-brand-color-two 50%,
+        $t-brand-color-two 100%
+    );
+}
+
+.e-circle {
+    border-radius: 50%;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

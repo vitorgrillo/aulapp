@@ -1,0 +1,39 @@
+.c-card-color {
+    box-shadow: 7px 7px 10px #00000029;
+    display: flex;
+    align-items: center;
+    font-family: 'font-medium';
+    @extend .p-3;
+
+    &__image {
+        display: block;
+        width: 100%;
+        max-width: 235px;
+        height: 235px;
+        @extend .me-4;
+        background-color: $t-gray-medium;
+        text-indent: -9999px;
+    }
+
+    &__text {
+        
+    }
+
+    &__name {
+        display: flex;
+        flex-direction: column;
+        @extend .d-text-md;
+        font-family: 'font-bold';
+        @extend .mb-0;
+    }
+
+    &__name2 {
+        font-family: 'font-medium';
+        font-style: italic;
+    }
+
+    &.--white {
+        background-color: $t-white;
+        border: 1px solid #707070;
+    }
+}

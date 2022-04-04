@@ -1,0 +1,50 @@
+.c-card-topic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $t-white;
+    padding: $s-3;
+    border: 1px solid $t-gray-dark;
+    text-decoration: none;
+    height: 58px;
+    overflow: hidden;
+
+    &__icon {
+        font-size: 70px;
+        color: $t-black;
+        margin-bottom: $s-3;
+    }
+
+    &__text {
+        text-align: center;
+        color: $t-aulapp-green;
+        font-family: 'font-bold';
+        font-size: $t-text-lg;
+        margin-bottom: 0;
+    }
+
+    &:hover {
+        color: $t-white;
+        background-color: $t-aulapp-green;
+
+        .c-card-topic__icon {
+            color: $t-white;
+        }
+    
+        .c-card-topic__text {
+            color: $t-white;
+        }
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    .c-card-topic {
+        height: 90px;
+    }
+}
+
+@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(lg) {}
+@include media-breakpoint-up(xl) {}
+@include media-breakpoint-up(xxl) {}

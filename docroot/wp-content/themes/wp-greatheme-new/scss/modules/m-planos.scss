@@ -1,0 +1,20 @@
+.m-planos {
+    position: relative;
+}
+
+@include media-breakpoint-up(md) {
+    .m-planos {
+
+        .--margin-planos {
+            padding-bottom: 240px;
+        }
+    
+        .--padding-planos {
+            padding-top: 80px;
+        }
+    
+        &__plans {
+            margin-top: -245px;
+        }
+    }
+}

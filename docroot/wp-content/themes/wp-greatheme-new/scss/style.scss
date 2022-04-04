@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/*!
+Theme Name:     Aulapp
+Theme URI:      aulapp.com.br
+Description:    Bootstrap
+Author:         Alex Marques
+Author URI:     alexmarques.dev
+Tags:           one-column, teach, student, education, class
+*/
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Global Variables
+@import "./scss/global-variables";
+
+// Themes
+@import "./scss/themes/default";
+
+// Elements
+@import "./scss/design-tokens";
+
+// Elements
+@import "./scss/elements";
+
+// Components
+@import "./scss/components";
+
+// Modules
+@import "./scss/modules";
+
+// Pages
+@import "./scss/pages";

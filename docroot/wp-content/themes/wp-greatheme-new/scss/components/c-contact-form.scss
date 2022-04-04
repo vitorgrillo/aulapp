@@ -1,0 +1,85 @@
+.c-contact-form {
+    .wpcf7-text,
+    .wpcf7-quiz {
+        border-radius: 2px;
+        border: 1px solid $t-gray-medium;
+        padding: $s-3;
+        width: 100%;
+        margin-bottom: $s-3;
+        margin-top: $s-2;
+        font-size: $t-text-lg;
+        font-family: 'font-regular';
+        color: $t-gray-dark;
+
+        &:focus {
+            outline: none;
+            border: 1px solid $t-gray-dark;
+        }
+    }
+
+    .wpcf7-submit {
+        margin-top: $s-3;
+        @extend .e-btn;
+    }
+
+    .wpcf7-form-control-wrap {
+        width: 100%;
+    }
+
+    label {
+        width: 100%;
+        color: $t-white;
+        font-family: 'font-bold';
+        font-size: $t-text-lg;
+    }
+
+    .ajax-loader {
+        display: none;
+    }
+
+    .wpcf7-list-item {
+        margin: $s-4 0;
+
+        label {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .wpcf7-list-item-label {
+        font-family: 'font-bold';
+        font-size: $t-text-md;
+    }
+
+    .acceptance-text {
+        font-size: $t-text-md;
+        color: $t-white;
+        display: inline;
+
+        a {
+            color: $t-white;
+        }
+    }
+
+    input[type='checkbox'] {
+        width: 30px;
+        height: 30px;
+        margin-right: $s-3;
+    }
+
+    p {
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .wpcf7 form .wpcf7-response-output {
+        margin: $s-3 0 0 0;
+        padding: $s-3;
+        border-radius: 3px;
+        background-color: white;
+        text-align: center;
+        font-family: 'font-bold';
+    }
+}

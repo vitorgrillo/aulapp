@@ -1,0 +1,67 @@
+.m-visao-valores {
+    background: repeating-linear-gradient(to bottom,
+    $t-gray-medium,
+    $t-gray-medium 50%,
+    $t-brand-color-two 50%,
+    $t-brand-color-two 100%);
+
+    img {
+        width: 100% !important;
+        max-width: 360px;
+        height: auto;
+        background-color: $t-gray-dark;
+        text-indent: -9999px;
+        display: block;
+    }
+}
+
+.e-title-image {
+    display: flex;
+    align-items: center;
+    color: $t-aulapp-green;
+    font-size: $t-text-xxl;
+
+    &__icon {
+        font-size: $t-text-xxxxl;
+        margin-right: $s-3;
+    }
+
+    &__title {
+        font-family: 'font-bold';
+    }
+
+    &__text {
+        font-size: $t-text-md;
+        font-family: 'font-medium';
+    }
+}
+
+.e-business-card {
+    display: flex;
+    flex-direction: column;
+    color: $t-white;
+
+    &__title {
+        font-family: "font-bold";
+        display: flex;
+        flex-direction: column;
+        font-size: $t-text-xxl;
+    }
+
+    &__text {
+        font-family: 'font-regular';
+        font-size: $t-text-md;
+    }
+}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {
+    .m-visao-valores {
+        background: repeating-linear-gradient(to right,
+        $t-gray-medium,
+        $t-gray-medium 50%,
+        $t-brand-color-two 50%,
+        $t-brand-color-two 100%);
+    }
+}

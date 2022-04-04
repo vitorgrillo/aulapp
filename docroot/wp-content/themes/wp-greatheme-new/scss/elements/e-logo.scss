@@ -1,0 +1,34 @@
+.e-logo {
+    width: 158px !important;
+    height: auto !important;
+}
+
+.container {
+    .navbar {
+        & > img {
+            width: 180px !important;
+            height: auto !important;
+        }
+    }
+}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {
+    .e-logo {
+        width: 250px !important;
+    }
+    
+    .container {
+        .navbar {
+            & > img {
+                width: 250px !important;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {}
+@include media-breakpoint-up(xl) {}
+@include media-breakpoint-up(xxl) {}
+
