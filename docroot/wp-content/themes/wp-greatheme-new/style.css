@@ -8728,15 +8728,14 @@ textarea.form-control-lg {
 ** Banner Customizations
 */
 body .metaslider .slides img {
-  width: 1500px;
+  width: 1450px;
   display: block;
-  height: 600px;
-  margin-left: -10%;
+  height: 650px;
+  margin-left: -5%;
 }
 
 body .metaslider .caption-wrap {
-  width: 30em;
-  text-align: justify;
+  width: 36em;
   position: absolute;
   top: 12em;
   background: unset;
@@ -8753,7 +8752,7 @@ body .metaslider .caption-wrap {
 
 .educacional .metaslider .caption-wrap h1,
 .corporativo .metaslider .caption-wrap h1 {
-  font-family: 'Roboto', font-bold;
+  font-family: font-bold;
   font-size: 32px;
   text-align: initial;
 }
@@ -8786,9 +8785,21 @@ body .metaslider .caption-wrap {
   font-size: 18px;
 }
 
+.m-banner-principal .container-fluid {
+  background: #EAEAEA;
+}
+
 @media only screen and (max-width: 1024px) {
+  body .metaslider .slides img {
+    width: 560px !important;
+    display: block !important;
+    height: auto !important;
+    margin-left: -185px !important;
+  }
+
   .educacional .metaslider .caption-wrap h1,
   .corporativo .metaslider .caption-wrap h1 {
+    text-align: center;
     white-space: normal;
   }
 
@@ -8803,13 +8814,15 @@ body .metaslider .caption-wrap {
       width: 100%;
       text-align: justify;
       position: initial;
+      margin: 0;
   }
 
   .e-btn.call-to-action {
       font-weight: 500;
-      position: fixed;
+      position: relative;
       text-align: center;
       bottom: 0;
+      margin-bottom: 15px;
       transform: none;
       z-index: 1;
       width: 100%;
